@@ -8,10 +8,10 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace RiotPls.DataDragon
+namespace RiotPls.DataDragon.Remote
 {
     [JsonArray]
-    public class DataDragonVersionInfo : List<string>
+    public class DataDragonVersionsInfo : List<string>
     {
         private string regexVersion=@"\d+[.]\d+[.]\d+";
         public string CurrentVersion { private set; get;}

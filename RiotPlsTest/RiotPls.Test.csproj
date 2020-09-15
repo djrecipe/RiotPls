@@ -44,16 +44,20 @@
   <ItemGroup>
     <Compile Include="TestAPIKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestRawDataDragonQueries.cs" />
+    <Compile Include="TestRemoteDataDragonQueries.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RiotPls.API\RiotPls.API.csproj">
+    <ProjectReference Include="..\RiotPls.API\RiotPls.LoLAPI.csproj">
       <Project>{c3f095eb-b762-4b15-9356-cf0d77b5f5e1}</Project>
-      <Name>RiotPls.API</Name>
+      <Name>RiotPls.LoLAPI</Name>
     </ProjectReference>
     <ProjectReference Include="..\RiotPls.DataDragon\RiotPls.DataDragon.csproj">
       <Project>{3160c381-db53-45b0-afbb-bab9c8f6498a}</Project>
       <Name>RiotPls.DataDragon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RiotPls.Transport\RiotPls.Transport.csproj">
+      <Project>{f13cf0fc-abe9-4454-9d15-29ec472a53f2}</Project>
+      <Name>RiotPls.Transport</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
